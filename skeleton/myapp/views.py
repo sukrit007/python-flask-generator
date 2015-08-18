@@ -1,6 +1,6 @@
 import flask
 import sys
-import python-demo
+import myapp
 
 app = flask.Flask(__name__)
 
@@ -8,7 +8,7 @@ app = flask.Flask(__name__)
 @app.route('/')
 def root():
     return flask.jsonify({
-        'name': 'python-demo api',
-        'version': python-demo.__version__,
+        'name': 'myapp api',
+        'version': myapp.__version__,
         'python': sys.version
     })
