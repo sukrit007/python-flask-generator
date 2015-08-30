@@ -6,7 +6,7 @@ Python flask  app generator that is integrated with docker.
 
 ## Running Generator (Docker)
 ```
-sudo docker run --rm  \
+docker run --rm  \
     -e GIT_USER="$GIT_USER" \
     -e GIT_USER_EMAIL="$GIT_USER_EMAIL" \
     -e GITHUB_USERNAME="$GITHUB_USERNAME" \
