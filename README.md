@@ -9,15 +9,15 @@ Python flask  app generator that is integrated with docker.
 sudo docker run --rm  \
     -e GIT_USER="$GIT_USER" \
     -e GIT_USER_EMAIL="$GIT_USER_EMAIL" \
-    -e GIT_OWNER="$GIT_OWNER" \
-    -e GIT_REPO="$GIT_REPO" \
-    -e APP_NAME="$APP_NAME" \
     -e GITHUB_USERNAME="$GITHUB_USERNAME" \
     -e GITHUB_TOKEN="$GITHUB_TOKEN" \
     -e SCM_TYPE="$SCM_TYPE" \
     -e ORCHESTRATOR_HOOK_URL="$ORCHESTRATOR_HOOK_URL" \
     -e IMAGE_FACTORY_HOOK_URL="$IMAGE_FACTORY_HOOK_URL" \
     -e HOOK_SECRET="$HOOK_SECRET" \
+    -e GIT_OWNER="$GIT_OWNER" \
+    -e GIT_REPO="$GIT_REPO" \
+    -e APP_NAME="$APP_NAME" \
     totem/python-flask-generator
 ```
 
